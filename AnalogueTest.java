@@ -18,7 +18,6 @@ public class AnalogueTest{
  public void printAllDetails() {
   photographer.add(analogue);
   String alldetails = photographer.printAllDetails();
-
   assertEquals("Polariod black and white Flash ", alldetails); 
   }
 

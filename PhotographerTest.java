@@ -39,7 +39,7 @@ public class PhotographerTest{
   photographer.add(digital);
   String alldetails = photographer.printAllDetails();
 
-  assertEquals("camera Nikon 2 3 ", alldetails);
+  assertEquals("Sony ILCE5100L No noise reduction Lo-res Nikon 2 3 ", alldetails);
  }
 
  // @Test

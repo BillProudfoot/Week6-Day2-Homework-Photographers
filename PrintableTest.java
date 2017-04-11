@@ -22,7 +22,7 @@ public class PrintableTest{
    photographer.add(analogue);
    String alldetails = photographer.printAllDetails();
 
-   assertEquals(" Sony ILCE5100L No noise reduction Lo-res Nikon Hi-res Noise Reduction filter Polariod black and white Flash", alldetails);
+   assertEquals("Sony ILCE5100L No noise reduction Lo-res Nikon Hi-res Noise Reduction filter Polariod black and white Flash ", alldetails);
   }
 
 }
