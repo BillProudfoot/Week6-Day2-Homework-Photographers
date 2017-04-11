@@ -33,23 +33,23 @@ public class PhotographerTest{
   assertEquals(0,photographer.cameraCount());
  }
 
- // @Test
- // public void printAllDetails() {
- //  photographer.add(camera);
- //  photographer.add(digital);
- //  String alldetails = photographer.printAllDetails();
-
- //  assertEquals("camera Nikon 2 3 ", alldetails);
- // }
-
  @Test
  public void printAllDetails() {
   photographer.add(camera);
-  photographer.add(analogue);
+  photographer.add(digital);
   String alldetails = photographer.printAllDetails();
 
-  assertEquals("camera Polariod black and white Flash ", alldetails); 
-  }
+  assertEquals("camera Nikon 2 3 ", alldetails);
+ }
+
+ // @Test
+ // public void printAllDetails() {
+ //  photographer.add(camera);
+ //  photographer.add(analogue);
+ //  String alldetails = photographer.printAllDetails();
+
+ //  assertEquals("camera Polariod black and white Flash ", alldetails); 
+ //  }
 
  }
 
