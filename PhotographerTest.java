@@ -11,7 +11,7 @@ public class PhotographerTest{
   public void before() {
     photographer = new Photographer("Lichfield");
     camera = new Camera();
-    digital = new Digital();
+    digital = new Digital("1", "2", "3");
     analogue = new Analogue();
   }
 
@@ -29,8 +29,17 @@ public class PhotographerTest{
  @Test 
  public void removeCamera(){
   photographer.add(camera);
-  Collection space = photographer.removeCamera();
+  Printable space = photographer.removeCamera();
   assertEquals(0,photographer.cameraCount());
+ }
+
+ @Test
+ public void printAllDetails() {
+  photographer.add(camera);
+  photographer.add(digital);
+  String alldetails = photographer.printAllDetails();
+
+  assertEquals("camera 1 2 3 ", alldetails);
  }
 
 }

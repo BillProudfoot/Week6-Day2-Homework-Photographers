@@ -1,14 +1,12 @@
 import java.util.*;
 
 public class Photographer{
-
   private String name;
-
-  private ArrayList<Collection> bag;
+  private ArrayList<Printable> bag;
 
   public Photographer(String name){
     this.name = name;
-    this.bag = new ArrayList<Collection>();
+    this.bag = new ArrayList<Printable>();
   }
 
   public String getName(){
@@ -19,15 +17,24 @@ public class Photographer{
     return bag.size();
   }
 
-  public void add(Collection collection){
-    bag.add(collection);
+  public void add(Printable printable){
+    bag.add(printable);
   }
 
-  public Collection removeCamera(){
+  public Printable removeCamera(){
     if(cameraCount() > 0 ) {
       return bag.remove(0);
     }
 
     return null;
+  }
+
+  public String printAllDetails() {
+    String details = "";
+    for(Printable printable : bag) {
+      details += printable.printDetails() + " ";
+    }
+
+    return details;
   }
 }
