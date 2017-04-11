@@ -22,4 +22,12 @@ public class Photographer{
   public void add(Collection collection){
     bag.add(collection);
   }
+
+  public Collection removeCamera(){
+    if(cameraCount() > 0 ) {
+      return bag.remove(0);
+    }
+
+    return null;
+  }
 }

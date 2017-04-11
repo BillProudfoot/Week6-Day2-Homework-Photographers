@@ -26,4 +26,11 @@ public class PhotographerTest{
   assertEquals(1,photographer.cameraCount());
  }
 
+ @Test 
+ public void removeCamera(){
+  photographer.add(camera);
+  Collection space = photographer.removeCamera();
+  assertEquals(0,photographer.cameraCount());
+ }
+
 }
