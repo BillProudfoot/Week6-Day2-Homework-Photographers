@@ -10,7 +10,7 @@ public class PhotographerTest{
   @Before 
   public void before() {
     photographer = new Photographer("Lichfield");
-    camera = new Camera();
+    camera = new Camera("Sony ILCE5100L", "No noise reduction", "Lo-res");
     digital = new Digital("Nikon", "2", "3");
     analogue = new Analogue("Polariod", "black and white", "Flash");
   }
